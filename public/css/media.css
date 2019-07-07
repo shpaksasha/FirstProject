@@ -1,0 +1,28 @@
+@media only screen and (max-width: 920px){
+    .dws-menu li a{
+        font-size: 1.0em;
+    }
+    .best{
+        width: 29%;
+    }
+    .grid-conteiner{
+        max-width: 800px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 280px 280px;
+        grid-template-areas:
+        "img-1 img-2"
+        "img-3 img-4"
+    }
+}
+@media only screen and (max-width: 768px){
+    .grid-conteiner{
+        max-width: 500px;
+        height: auto;
+        grid: 1fr/1fr;
+        grid-template-areas:
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+    }
+}

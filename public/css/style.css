@@ -1,0 +1,362 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #FDF3F3;
+}
+/*Шапка сайта с иконками соц.сетей*/
+.foot{
+	width: 100%;
+	height: 70px;
+	background-color: #61D378;
+	text-align: center;
+}
+.hrf{
+	width: 100%;
+	background-color:#61D378;
+	padding: 0;
+	margin: 0;
+}
+
+.icon{
+	max-width: 32px;
+	max-height: 32px;
+	padding-left: 3px;
+}
+.title{
+	color: #FFFFFF;
+	font-size: 2.8em;
+	font-family: 'Bitter', serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*МЕНЮ САЙТА*/
+.dws-menu *{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.dws-menu ul{
+	font-family: 'Open Sans Condensed', sans-serif;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.dws-menu li a{
+	display: block;
+	background-color:#F3E1B1;
+	padding:11px 30px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color:#000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	border-right: 1px solid #A7A3A7;
+	border-bottom: 1px solid #A7A3A7;
+}
+.dws-menu a:hover{
+	color: #44DE63;
+	background-color: #7CA7F0;
+	transition: all 0.4s ease;
+}
+.dws-menu li ul{
+	display: block;
+	position: absolute;
+	width: 170px;
+}
+.dws-menu li > ul li {
+	border-left: 1px solid #A7A3A7;
+	display: none;
+}
+.dws-menu li > ul li a{
+	padding: 5px;
+	text-transform: none;
+	text-align: left;
+	font-size: 1.1em;
+	color: #416AD3;
+}
+.dws-menu li:hover ul li{
+	display: block;
+}
+/*ПЕРВЫЙ БЛОК САЙТА*/
+.news{
+	margin:5px 10px;
+	width: 40%;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	background-color: #E8DCDC;
+	border-radius: 5px 5px 0 0;
+}
+.news img{
+	border-radius: 5px 5px 0 0;
+	width: 100%;
+	height: auto;
+}
+.news h3{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+.news p{
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: justify;
+	padding: 10px;
+}
+
+/*ВТОРОЙ НОВОСТНОЙ БЛОК САЙТА*/
+.news-one{
+	background-color: #D0CACA;
+	margin-top: 5px;
+	width: 27%;
+	padding: 10px;
+	float: left;
+	box-sizing: border-box;
+}
+.news-one h4{
+	font-size: 1.1em;
+	padding: 0;
+	margin: 0;
+	border-bottom: 2px solid #5D5C5C;
+}
+.news-one p{
+	border-bottom: 1.5px solid #8A8888;
+}
+/*ТРЕТИЙ БЛОК САЙТА СО СТАТЬЕЙ ПРО ЛУЧШИХ ФУТБОЛИСТОВ*/
+.best{
+	margin-top: 5px;
+	margin-left: 5px;
+	background-color: #F9ECEC;
+	width: 30%;
+	float: right;
+	box-sizing: border-box;
+}
+.best h1{
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 0;
+	border-bottom: 2px solid #5D5C5C;
+}
+.best img{
+	width: 40%;
+	height: auto;
+	margin: 8px 0;
+	float: left;
+}
+.best p{
+	font-weight: bold;
+	font-size: 0.7em;
+}
+.best a{
+	text-decoration: none;
+	color: #0F0F0F;
+}
+.best a:hover{
+	color: #7CD326;
+}
+.best time{
+	font-size: 0.8em;
+	padding-left: 5px;
+	opacity: 0.5;
+}
+/*СТРАНИЦА СО СТАТЬЕЙ*/
+.events{
+	background-color:  #F9ECEC;
+	width: 900px;
+	margin: 0 auto;
+}
+.events h1{
+	font-size: 1.6em;
+	padding-top: 10px;
+	text-indent: 1.5em;
+}
+.events img{
+	width: 850px;
+	height: auto;
+	padding-left: 25px;
+}
+.events h2{
+	font-size: 1.2em;
+	text-indent: 1.5em;
+}
+.events p{
+	font-family: 'KoHo', sans-serif;
+	font-size: 0.9em;
+	padding-left: 10px;
+}
+/*БЛОК ЧЕТВЕРТЫЙ С ВСПЛЫВАЮЩЕЙ НАДПИСЬЮ И АНИМАЦИЕЙ*/
+.img-box{
+	position: relative;
+	width: 600px;
+	height: 360px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+.img-box a{
+	display: block;
+}
+.img-box a img{
+	width: 600px;
+	height: 360px;
+	transition: all 0.4s;
+}
+.img-box:hover a img{
+	transform: scale(1.1);
+}
+.img-box::before{
+	position: absolute;
+	content:'';
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 600px;
+	height: 360px;
+	transition: all 0.4s;
+}
+.text-box{
+	position: absolute;
+	bottom: 0;
+	color:#FFFFFF;
+	width: 100%;
+}
+.text-box h4{
+	padding-left: 10px;
+	font-size: 1.2em;
+}
+.text-box p{
+	padding: 0 10px;
+	text-align: justify;
+	font-size: 1.0em;
+}
+.img-box:hover .text-box{
+	background-color: rgba(0, 0, 0, 0.4);
+	color: #DDCB4F;
+	transition: all 0.4s;
+}
+/*СОЗДАНИЕ ТАБЛИЦЫ*/
+.grid-conteiner{
+	display: grid;
+	max-width: 900px;
+	height: 470px;
+	margin: 5px auto;
+	grid-template-columns: 2fr 1fr 1fr;
+    /*grid-template-rows: [img-2] 180px [img-4] 230px;*/
+	grid-gap: 4px;
+	grid-template-areas:
+			"img-1 img-2 img-3"
+			"img-1 img-4 img-4"
+}
+.grid-conteiner div:nth-child(1){
+	grid-area: img-1;
+}
+.grid-conteiner div:nth-child(2){
+	grid-area: img-2;
+}
+.grid-conteiner div:nth-child(3){
+	grid-area: img-3;
+}
+.grid-conteiner div:nth-child(4){
+	grid-area: img-4;
+}
+.img-block{
+	position: relative;
+	overflow: hidden;
+	display: flex;
+    /*justify-items: center;
+    align-items: center;*/
+}
+.img-block img{
+	width: 100%;
+}
+.img-block h3{
+    width: 100px;
+	height: 50px;
+	position: absolute;
+	font-size: 25px;
+	background-color: rgba(240, 0, 0, 0.6);
+	color: #ffffff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/*ТАБЛИЦА*/
+.apl{
+	width: 850px;
+	/*border: 1px solid #5B5A5A;*/
+	background-color: #F8F3F3;
+	margin: 5px 10px;
+	font-family: 'Fjalla One', sans-serif;
+}
+.apl caption{
+	/*caption-side: top;*/
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    text-shadow: 2px 2px 0 #cccccc;
+}
+.apl tr{
+	text-align: center;
+	font-size: 0.9em;
+    transition: all 0.3s;
+}
+.cap{
+    color: #7FB564;
+    background-color: #D1CDCD;
+}
+.left{
+	text-align: left;
+	padding-left: 25px;
+	transition: all 0.4s;
+}
+.apl tr:hover{
+    background-color: #F1E5E5;
+    transition: all 0.3s;
+}
+tr.cap:hover{
+	background-color: #D1CDCD;
+}
+/*.left:hover{
+	color: #7FB564;
+	transition: all 0.4s;
+}*/
+/*СЛАЙДЕР*/
+.slides{
+    max-width: 600px;
+    margin: 5px auto;
+}
+ul.acordion{
+    display: flex;
+    justify-content: center;
+	padding: 0;
+}
+ul.acordion li{
+    width: 50px;
+    overflow: hidden;
+	padding: 1px 1px;
+	cursor: pointer;
+	display: block;
+	transition: all 1s;
+}
+ul.acordion img{
+	width: 350px;
+	height: 250px;
+}
+ul.acordion li:hover{
+    width: 350px;
+    height: 250px;
+    box-shadow: 2px 3px 10px #48C2EF;
+    transition: all 0.5s;
+}
+ul.acordion li:nth-child(3){
+	width: 350px;
+}
+ul.acordion:hover li:nth-child(3){
+	width: 50px;
+}
+ul.acordion li:nth-child(3):hover{
+	width: 350px;
+}
+
